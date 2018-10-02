@@ -8,8 +8,7 @@
       <v-spacer></v-spacer>
     </v-toolbar>
     <v-content>
-      <!-- TODO: add router view -->
-      <MainContent/>
+       <router-view />
     </v-content>
     <v-footer :fixed="fixed" app>
       <span :style="{ padding: '10px'}">&copy; 2018</span>
