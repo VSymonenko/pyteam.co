@@ -1,7 +1,7 @@
 <template lang="pug">
   div(clas='home')
     //- img(alt='Vue logo' src='../assets/logo.png')
-    HelloWorld(:msg="$t('message')")
+    //- HelloWorld(:msg="$t('message')")
 </template>
 
 <script lang="ts">
