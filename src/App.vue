@@ -17,27 +17,25 @@
 </template>
 
 <script>
-import MainContent from './components/MainContent'
-
 export default {
   name: 'App',
-  components: {
-    MainContent
-  },
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: true,
       fixed: false,
       items: [{
         icon: 'mdi-chart-bubble',
-        title: 'Inspire'
+        title: 'Inspire',
       }],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'PyTeam'
-    }
-  }
-}
+      title: 'PyTeam',
+    };
+  },
+};
 </script>
+
+<style lang="stylus">
+</style>

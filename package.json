@@ -1,54 +1,62 @@
 {
-  "name": "my-app",
+  "name": "hello-world",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0-rc.1",
     "@mdi/font": "^2.6.95",
+    "core-js": "^2.5.7",
     "register-service-worker": "^1.0.0",
     "roboto-fontface": "*",
+    "selenium-webdriver": "^4.0.0-alpha.1",
     "vue": "^2.5.17",
+    "vue-class-component": "^6.0.0",
+    "vue-i18n": "^8.1.0",
+    "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
-    "vuetify": "^1.2.0"
+    "vuetify": "^1.2.0",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@types/jest": "^23.1.4",
+    "@types/webpack": "^4.4.0",
     "@vue/cli-plugin-babel": "^3.0.4",
-    "@vue/cli-plugin-eslint": "^3.0.4",
+    "@vue/cli-plugin-e2e-nightwatch": "^3.0.4",
     "@vue/cli-plugin-pwa": "^3.0.4",
+    "@vue/cli-plugin-typescript": "^3.0.4",
+    "@vue/cli-plugin-unit-jest": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
-    "babel-plugin-transform-imports": "^1.5.0",
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "babel-core": "*",
+    "lint-staged": "^7.2.2",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1",
+    "stylus-loader": "^3.0.2",
+    "ts-jest": "^23.0.0",
+    "typescript": "^3.0.0",
+    "vue-cli-plugin-i18n": "^0.5.1",
+    "vue-cli-plugin-pug": "^1.0.7",
     "vue-cli-plugin-vuetify": "^0.2.0",
     "vue-template-compiler": "^2.5.17"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "vue-cli-service lint",
+      "git add"
     ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 10"
-  ]
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
 }
