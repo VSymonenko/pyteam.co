@@ -10,7 +10,7 @@ module.exports = {
   transform: {
     '^.+\\.vue$': 'vue-jest',
     '.+\\.(css|styl|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$': 'jest-transform-stub',
-    '^.+\\.tsx?$': 'ts-jest'
+    '^.+\\.tsx?$': 'ts-jest',
   },
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1'
@@ -21,5 +21,14 @@ module.exports = {
   testMatch: [
     '**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
   ],
-  testURL: 'http://localhost/'
+  testURL: 'http://localhost/',
+  collectCoverage: true,
+  collectCoverageFrom: [
+    '**/src/*.{js,vue}',
+    '!**/node_modules/**',
+    '!**/dist/**',
+    '!**/test/**',
+    '!**/coverage/**'
+  ],
+  coverageReporters: ['html', 'text-summary']
 }

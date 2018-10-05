@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-const Home = () => import('./views/Home.vue');
+const MainContent = () => import('./views/MainContent.vue');
 
 Vue.use(Router);
 
@@ -12,7 +12,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      component: MainContent,
     },
     {
       path: '*', redirect: '/',
