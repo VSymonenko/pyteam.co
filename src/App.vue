@@ -1,3 +1,4 @@
+
 <template lang="pug">
   v-app
     v-toolbar(app :clipped-left="clipped")

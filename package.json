@@ -5,12 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
     "test": "npm run test:unit && npm run test:e2e",
+    "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
+    "test:jest": "jest",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "@mdi/font": "^2.6.95",
     "core-js": "^2.5.7",
     "register-service-worker": "^1.0.0",
@@ -21,10 +23,11 @@
     "vue-i18n": "^8.1.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
-    "vuetify": "^1.2.0",
+    "vuetify": "^1.2.6",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@types/jest": "^23.1.4",
     "@types/webpack": "^4.4.0",
@@ -35,7 +38,7 @@
     "@vue/cli-plugin-unit-jest": "^3.0.4",
     "@vue/cli-service": "^3.0.4",
     "@vue/test-utils": "^1.0.0-beta.20",
-    "babel-core": "*",
+    "babel-core": "7.0.0-bridge.0",
     "lint-staged": "^7.2.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
@@ -43,7 +46,7 @@
     "typescript": "^3.0.0",
     "vue-cli-plugin-i18n": "^0.5.1",
     "vue-cli-plugin-pug": "^1.0.7",
-    "vue-cli-plugin-vuetify": "^0.2.0",
+    "vue-cli-plugin-vuetify": "^0.2.1",
     "vue-template-compiler": "^2.5.17"
   },
   "gitHooks": {

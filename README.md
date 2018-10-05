@@ -64,5 +64,3 @@ npm run test:unit
   5. Append string `C:\Program Files\Java\{current jdk version}\bin` to `path` variable.
 
 ## TODO:
-
- - [ ] change assets for PWA
