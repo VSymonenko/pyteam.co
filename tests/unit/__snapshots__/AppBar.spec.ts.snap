@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<vtoolbar-stub scrollthreshold="300" tabs="true" app="app">
+  <vspacer-stub class="hidden-sm-and-down"></vspacer-stub>
+  <vtoolbartitle-stub></vtoolbartitle-stub>
+  <vspacer-stub></vspacer-stub>
+  <vtoolbaritems-stub class="hidden-sm-and-down"></vtoolbaritems-stub>
+  <vspacer-stub></vspacer-stub>
+</vtoolbar-stub>
+`;

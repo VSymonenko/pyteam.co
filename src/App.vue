@@ -1,9 +1,7 @@
 
 <template lang="pug">
-  v-app
-    v-toolbar(app :clipped-left="clipped")
-      v-toolbar-title(v-text="title")
-      v-spacer
+  v-app(:style={overflow: 'hidden'})
+    AppBar(:title="title" :clipped="clipped" :menu="tabs")
     v-content
       v-container(fluid)
         v-slide-y-transition(mode="out-in")
@@ -14,31 +12,34 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import Vue from 'vue';
+import Component from 'vue-class-component';
+import AppBar from './components/AppBar.vue';
 
 @Component({
   name: 'App',
-  data() {
-    return {
-      clipped: false,
-      drawer: true,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-        },
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'PyTeam',
-    };
+  components: {
+    AppBar,
   },
 })
 
-export default class App extends Vue {}
+export default class App extends Vue {
+  public clipped: boolean = false;
+  public fixed: boolean = false;
+  protected title: string = 'PyTeam';
+  private darkTheme: boolean = false;
+  private tabs: Array<object | null> = [
+    { name: 'About', link: '/' },
+    { name: 'Team', link: '/team' },
+    { name: 'Services', link: '/services' },
+    { name: 'Portfolio', link: '/portfolio' },
+    { name: 'Blog', link: '/blog' },
+    { name: 'Contact', link: '/contact' },
+  ];
+}
 </script>
 
 <style lang="stylus">
+::-webkit-scrollbar
+  display: none
 </style>
