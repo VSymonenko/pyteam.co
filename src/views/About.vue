@@ -5,13 +5,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import Vue from 'vue';
+import Component from 'vue-class-component';
 
 @Component({
-  name: 'main-content',
+  name: 'About',
 })
 
-export default class MainContent extends Vue {}
+export default class About extends Vue {}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

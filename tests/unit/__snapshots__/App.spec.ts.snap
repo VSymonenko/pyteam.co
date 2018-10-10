@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<vapp-stub id="app" style="overflow: hidden;">
+  <appbar-stub title="PyTeam" menu="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></appbar-stub>
+  <vcontent-stub tag="main">
+    <vcontainer-stub tag="div" fluid="fluid">
+      <vslideytransition-stub mode="out-in" origin="top center 0">
+        <vlayout-stub tag="div" column="column" align-center="align-center">
+          <router-view-stub name="default"></router-view-stub>
+        </vlayout-stub>
+      </vslideytransition-stub>
+    </vcontainer-stub>
+  </vcontent-stub>
+  <vfooter-stub height="32" app="app"><span style="padding: 10px;">© 2018</span></vfooter-stub>
+</vapp-stub>
+`;
