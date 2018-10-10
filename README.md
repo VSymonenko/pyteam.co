@@ -35,6 +35,11 @@ npm run test:e2e
 npm run test:unit
 ```
 
+### Run update snapshots for unit tests
+```
+npm run test:jest
+```
+
 ## Configuration
 
 **Win 10**
