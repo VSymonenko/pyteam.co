@@ -8,7 +8,7 @@
     "test": "npm run test:unit && npm run test:e2e",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
-    "test:jest": "jest",
+    "test:jest": "jest -u",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@types/jest": "^23.1.4",
     "@types/webpack": "^4.4.0",

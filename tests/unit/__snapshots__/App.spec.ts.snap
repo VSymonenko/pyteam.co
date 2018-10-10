@@ -5,11 +5,11 @@ exports[`renders correctly 1`] = `
   <appbar-stub title="PyTeam" menu="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></appbar-stub>
   <vcontent-stub tag="main">
     <vcontainer-stub tag="div" fluid="fluid">
-      <vslideytransition-stub mode="out-in" origin="top center 0">
-        <vlayout-stub tag="div" column="column" align-center="align-center">
+      <vlayout-stub tag="div" column="column" align-center="align-center">
+        <vfadetransition-stub mode="out-in" origin="top center 0">
           <router-view-stub name="default"></router-view-stub>
-        </vlayout-stub>
-      </vslideytransition-stub>
+        </vfadetransition-stub>
+      </vlayout-stub>
     </vcontainer-stub>
   </vcontent-stub>
   <vfooter-stub height="32" app="app"><span style="padding: 10px;">© 2018</span></vfooter-stub>

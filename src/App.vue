@@ -1,11 +1,11 @@
 
 <template lang="pug">
   v-app(:style={overflow: 'hidden'})
-    AppBar(:title="title" :clipped="clipped" :menu="tabs")
+    AppBar(:title="appBar.title" :clipped="appBar.clipped" :menu="appBar.tabs")
     v-content
       v-container(fluid)
-        v-slide-y-transition(mode="out-in")
-          v-layout(column align-center)
+        v-layout(column align-center)
+          v-fade-transition(mode="out-in")
             router-view
     v-footer(:fixed="fixed" app)
       span(:style="{ padding: '10px'}") &copy; 2018
@@ -15,27 +15,23 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import AppBar from './components/AppBar.vue';
+import { mapGetters } from 'vuex';
 
 @Component({
   name: 'App',
   components: {
     AppBar,
   },
+  computed: {
+    ...mapGetters([
+      'appBar',
+    ]),
+  },
 })
 
 export default class App extends Vue {
-  public clipped: boolean = false;
   public fixed: boolean = false;
-  protected title: string = 'PyTeam';
   private darkTheme: boolean = false;
-  private tabs: Array<object | null> = [
-    { name: 'About', link: '/' },
-    { name: 'Team', link: '/team' },
-    { name: 'Services', link: '/services' },
-    { name: 'Portfolio', link: '/portfolio' },
-    { name: 'Blog', link: '/blog' },
-    { name: 'Contact', link: '/contact' },
-  ];
 }
 </script>
 
