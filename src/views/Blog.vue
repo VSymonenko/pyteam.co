@@ -1,5 +1,8 @@
 <template lang="pug">
-  div {{ $options.name }}
+  v-flex(align-center justify-center fill-height d-flex)
+    v-spacer(class="hidden-sm-and-down" :style={width: '50%'})
+    v-flex {{ $options.name }} lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+    v-spacer(class="hidden-sm-and-down" :style={width: '50%'})
 </template>
 
 <script lang="ts">
