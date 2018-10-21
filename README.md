@@ -1,4 +1,6 @@
-# PWA
+# Description
+
+Progressive Web Application.
 
 ## Project setup
 ```
