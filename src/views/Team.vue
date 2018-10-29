@@ -1,5 +1,5 @@
 <template lang="pug">
-  div {{ $options.name }} 
+  v-container(fluid d-flex :style={'min-height': '100%', 'align-items': 'center', 'justify-content': 'center' }) {{ $options.name }}
 </template>
 
 <script lang="ts">

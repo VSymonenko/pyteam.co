@@ -4,7 +4,7 @@
     v-toolbar-title(v-text="title")
     v-spacer
     v-toolbar-items(class="hidden-sm-and-down")
-      v-btn(flat v-for="(tab, index) in menu" :key="index" :to="tab.link") {{ tab.name }}
+      v-btn(flat v-for="(tab, index) in menu" :key="index" :to="tab.path") {{ tab.name }}
     v-spacer
 </template>
 

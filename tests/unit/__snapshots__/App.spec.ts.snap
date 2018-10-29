@@ -4,13 +4,9 @@ exports[`renders correctly 1`] = `
 <vapp-stub id="app" style="overflow: hidden; display: none;" name="app">
   <appbar-stub title="PyTeam" menu="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"></appbar-stub>
   <vcontent-stub tag="main">
-    <vcontainer-stub tag="div" fluid="fluid" d-flex="d-flex">
-      <vlayout-stub tag="div" column="column" align-center="align-center" fill-height="fill-height">
-        <vfadetransition-stub mode="out-in" origin="top center 0">
-          <router-view-stub name="default"></router-view-stub>
-        </vfadetransition-stub>
-      </vlayout-stub>
-    </vcontainer-stub>
+    <awesomeswiper-stub tabroutes="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" colors="hsla(270, 50%, 40%, 1),hsla(35, 100%, 67%, 1),hsla(48, 86%, 72%, 1),hsla(11, 100%, 87%, 1),hsla(176, 100%, 44%, 1),hsla(171, 44%, 69%, 1)">
+      <router-view-stub name="default"></router-view-stub>
+    </awesomeswiper-stub>
   </vcontent-stub>
   <vfooter-stub height="32" app="app"><span style="padding: 10px;">© 2018</span></vfooter-stub>
 </vapp-stub>

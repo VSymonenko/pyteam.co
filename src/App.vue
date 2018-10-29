@@ -3,10 +3,8 @@
     v-app(:style={overflow: 'hidden'} v-show="show")
       AppBar(:title="appBar.title" :clipped="appBar.clipped" :menu="appBar.tabs")
       v-content
-        v-container(fluid d-flex :style={'min-height': '100%', 'align-items': 'center' })
-          v-layout(column align-center fill-height)
-            v-fade-transition(mode="out-in")
-              router-view
+        AwesomeSwiper(:tab-routes="appBar.tabs" :colors="colors")
+          router-view
       v-footer(:fixed="fixed" app)
         span(:style="{ padding: '10px'}") &copy; 2018
 </template>
@@ -16,15 +14,18 @@ import Vue from 'vue';
 import Component from 'vue-class-component';
 import AppBar from './components/AppBar.vue';
 import { mapGetters } from 'vuex';
+import AwesomeSwiper from '@/components/AwesomeSwiper.vue';
 
 @Component({
   name: 'App',
   components: {
     AppBar,
+    AwesomeSwiper,
   },
   computed: {
     ...mapGetters([
       'appBar',
+      'colors',
     ]),
   },
 })

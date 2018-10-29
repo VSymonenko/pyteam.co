@@ -12,6 +12,7 @@ export interface AppBar {
 
 export interface State {
   appBar: AppBar;
+  colors: string[];
 }
 
 const initState: State = {
@@ -19,14 +20,22 @@ const initState: State = {
     clipped: false,
     title: 'PyTeam',
     tabs: [
-      { name: 'About', link: '/' },
-      { name: 'Team', link: '/team' },
-      { name: 'Services', link: '/services' },
-      { name: 'Portfolio', link: '/portfolio' },
-      { name: 'Blog', link: '/blog' },
-      { name: 'Contact', link: '/contact' },
+      { name: 'about', path: '/' },
+      { name: 'team', path: '/team' },
+      { name: 'services', path: '/services' },
+      { name: 'portfolio', path: '/portfolio' },
+      { name: 'blog', path: '/blog' },
+      { name: 'contact', path: '/contact' },
     ],
   },
+  colors: [
+    'hsla(270, 50%, 40%, 1)',
+    'hsla(35, 100%, 67%, 1)',
+    'hsla(48, 86%, 72%, 1)',
+    'hsla(11, 100%, 87%, 1)',
+    'hsla(176, 100%, 44%, 1)',
+    'hsla(171, 44%, 69%, 1)',
+  ],
 };
 
 export default new Vuex.Store({
