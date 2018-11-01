@@ -334,9 +334,10 @@ export default class AwesomeSwiper extends Vue {
     const y: number = (event as MouseEvent).pageY
       ? (event as MouseEvent).pageY
       : (this.getFirstTouch(event as TouchEvent) as CustomTouchEvent).pageY;
+    if (!this.entered) { return; }
     if ((Math.abs(y - this.position.y)) > 3) { return; }
     if ((Math.abs(x - this.position.x)) > 3) {
-      const element: any = event.target;
+      const element: any = this.$el.firstChild;
       element.style.boxShadow = '12px 0 15px -4px rgba(0,0,0,0.25), -12px 0 8px -4px rgba(0,0,0,0.25)';
       this.animation.to(element, 1, {
         x: x - this.position.x,
@@ -358,7 +359,8 @@ export default class AwesomeSwiper extends Vue {
   }
 
   protected stopMove(event: MouseEvent | TouchEvent | CustomTouchEvent): void {
-    const element: any = event.target;
+    const element: any = this.$el.firstChild;
+    // const element: any = event.target;
     const width: number = element.clientWidth;
     const x: number = (event as MouseEvent).pageX
       ? (event as MouseEvent).pageX
@@ -399,6 +401,7 @@ export default class AwesomeSwiper extends Vue {
 
   protected touchMove(event: TouchEvent) {
     const touch: object = this.getFirstTouch(event);
+    if (event.type !== 'touchmove') { return; }
     this.move(event);
   }
 
