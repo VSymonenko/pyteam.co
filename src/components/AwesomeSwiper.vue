@@ -360,7 +360,6 @@ export default class AwesomeSwiper extends Vue {
 
   protected stopMove(event: MouseEvent | TouchEvent | CustomTouchEvent): void {
     const element: any = this.$el.firstChild;
-    // const element: any = event.target;
     const width: number = element.clientWidth;
     const x: number = (event as MouseEvent).pageX
       ? (event as MouseEvent).pageX
