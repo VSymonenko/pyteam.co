@@ -42,6 +42,12 @@ npm run test:unit
 npm run test:jest
 ```
 
+### Deletes the Jest cache directory and then exits without running tests.
+*Note: clearing the cache will reduce performance.*
+```
+npm run test:jest:clear
+```
+
 ## Configuration
 
 **Win 10**

@@ -3,10 +3,14 @@ import { State } from './index';
 
 const appBar: Getter<State, any> = (state: State) => state.appBar;
 const colors: Getter<State, any> = (state: State) => state.colors;
+const language: Getter<State, any> = (state: State) => state.language;
+const languages: Getter<State, any> = (state: State) => state.languages;
 
 const getterTree: GetterTree<State, any> = {
   appBar,
   colors,
+  language,
+  languages,
 };
 
 export default getterTree;

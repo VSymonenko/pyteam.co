@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 import getters from './getters';
+import actions from './actions';
+import mutations from './mutations';
 
 Vue.use(Vuex);
 
@@ -11,11 +13,15 @@ export interface AppBar {
 }
 
 export interface State {
+  language: string;
+  languages: string[];
   appBar: AppBar;
   colors: string[];
 }
 
 const initState: State = {
+  language: 'en',
+  languages: ['en', 'ua'],
   appBar: {
     clipped: false,
     title: 'PyTeam',
@@ -39,6 +45,9 @@ const initState: State = {
 };
 
 export default new Vuex.Store({
+  strict: true,
+  actions,
   getters,
+  mutations,
   state: initState,
 });

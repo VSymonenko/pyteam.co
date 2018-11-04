@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<vfooter-stub height="32" app="app" style="padding: 10px;"><span>© 2018</span>
+  <vlayout-stub tag="div" justify-end="justify-end">
+    <vbtntoggle-stub mandatory="true" class="v-footer"></vbtntoggle-stub>
+  </vlayout-stub>
+</vfooter-stub>
+`;

@@ -1,31 +1,39 @@
 <template lang="pug">
   transition(name="app")
     v-app(:style={overflow: 'hidden'} v-show="show")
-      AppBar(:title="appBar.title" :clipped="appBar.clipped" :menu="appBar.tabs")
+      AppBar(:title="appBar.title" :clipped="appBar.clipped" :menu="appBar.tabs" :language="language")
       v-content
         AwesomeSwiper(:tab-routes="appBar.tabs" :colors="colors")
           router-view
-      v-footer(:fixed="fixed" app)
-        span(:style="{ padding: '10px'}") &copy; 2018
+      Footer(:language="language" :languages="languages" @set-language="setLanguage")
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import AppBar from './components/AppBar.vue';
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 import AwesomeSwiper from '@/components/AwesomeSwiper.vue';
+import Footer from '@/components/Footer.vue';
 
 @Component({
   name: 'App',
   components: {
     AppBar,
     AwesomeSwiper,
+    Footer,
   },
   computed: {
     ...mapGetters([
       'appBar',
       'colors',
+      'language',
+      'languages',
+    ]),
+  },
+  methods: {
+    ...mapActions([
+      'setLanguage',
     ]),
   },
 })

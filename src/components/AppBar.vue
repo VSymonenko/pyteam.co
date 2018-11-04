@@ -4,7 +4,7 @@
     v-toolbar-title(v-text="title")
     v-spacer
     v-toolbar-items(class="hidden-sm-and-down")
-      v-btn(flat v-for="(tab, index) in menu" :key="index" :to="tab.path") {{ tab.name }}
+      v-btn(flat v-for="(tab, index) in menu" :key="index" :to="tab.path") {{ $t(`appBar.${tab.name}`, language) }}
     v-spacer
 </template>
 
@@ -22,7 +22,10 @@ import Component from 'vue-class-component';
       type: Boolean,
     },
     menu: {
-      type: Array,
+      type: [Array, Object],
+    },
+    language: {
+      type: String,
     },
   },
 })

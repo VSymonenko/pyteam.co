@@ -1,5 +1,5 @@
 import AppBar from '@/components/AppBar.vue';
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
 import './common';
 
 test('renders correctly', () => {
@@ -27,10 +27,16 @@ describe('AppBar', () => {
   });
 
   it('renders a for each item in tabs', () => {
-    const menu = ['1', '2'];
+    const menu = {
+      about: 'about',
+      team: 'team',
+    };
     const wrapper = shallowMount(AppBar, {
       propsData: { menu },
+      mocks: {
+        $t: () => '', // stub i18n
+      },
     });
-    expect(wrapper.props().menu).toHaveLength(menu.length);
+    expect(wrapper.props().menu).toMatchObject(menu);
   });
 });

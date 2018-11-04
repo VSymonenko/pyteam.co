@@ -1,3 +1,4 @@
+import devtools from '@vue/devtools';
 import Vue from 'vue';
 import './plugins/vuetify';
 import App from './App.vue';
@@ -25,4 +26,8 @@ if (module.hot) {
   module.hot.accept(['./locales/en'], () => {
     i18n.setLocaleMessage('en', require('./locales/en').default);
   });
+}
+
+if (process.env.NODE_ENV === 'development') {
+  devtools.connect(/* host, port */);
 }

@@ -1,4 +1,11 @@
 {
-  "message": "привіт",
-  "about": "Про нас"
+  "message": "привіт i18n !!",
+  "appBar": {
+    "about": "про нас",
+    "team": "команда",
+    "services": "послуги",
+    "portfolio": "портфоліо",
+    "blog": "блог",
+    "contact": "контакт"
+  }
 }

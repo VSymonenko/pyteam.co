@@ -5,7 +5,6 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify';
 import '@/router';
-import '@/store';
 
 Vue.use(Vuetify, {
   iconfont: 'mdi',
