@@ -7,5 +7,27 @@
     "portfolio": "portfolio",
     "blog": "blog",
     "contact": "contact"
+  },
+  "pageHeader": {
+    "about": {
+      "header": "About",
+      "subHeader": "Drop us a line!"
+    },
+    "team": {
+      "header": "Team"
+    },
+    "services": {
+      "header": "Services"
+    },
+    "portfolio": {
+      "header": "Portfolio"
+    },
+    "blog": {
+      "header": "Blog"
+    },
+    "contact": {
+      "header": "Contact",
+      "subHeader": "Drop us a line!"
+    }
   }
 }

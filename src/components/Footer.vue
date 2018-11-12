@@ -23,7 +23,7 @@ import { NoCache } from '@/decorators';
   },
 })
 
-export default class AppBar extends Vue {
+export default class Footer extends Vue {
   @NoCache
   get text(): string {
     return this.$props.language;

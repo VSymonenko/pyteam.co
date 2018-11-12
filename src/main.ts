@@ -9,6 +9,10 @@ import './registerServiceWorker';
 import 'roboto-fontface/css/roboto/roboto-fontface.css';
 import '@mdi/font/css/materialdesignicons.css';
 import i18n from './i18n';
+import PageHeader from '@/components/PageHeader.vue';
+
+// These components are globally registered.
+Vue.component('PageHeader', PageHeader);
 
 Vue.config.productionTip = false;
 

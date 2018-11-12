@@ -51,11 +51,17 @@ export default class App extends Vue {
 
 <style lang="stylus">
 ::-webkit-scrollbar
-  display: none
-.app-enter-active, .app-leave-active {
-  transition: opacity .5s;
-}
-.app-enter, .app-leave-to /* .app-leave-active  */ {
-  opacity: 0;
-}
+  display none
+.app-enter-active, .app-leave-active
+  transition opacity .5s
+.app-enter, .app-leave-to /* .app-leave-active  */
+  opacity 0
+.flex-column
+  display flex
+  flex-direction column
+  align-items center
+.flex-row
+  display flex
+  flex-direction row
+  justify-content center
 </style>

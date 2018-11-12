@@ -7,5 +7,26 @@
     "portfolio": "портфоліо",
     "blog": "блог",
     "contact": "контакт"
+  },
+  "pageHeader": {
+    "about": {
+      "header": "Про нас"
+    },
+    "team": {
+      "header": "Команда"
+    },
+    "services": {
+      "header": "Послуги"
+    },
+    "portfolio": {
+      "header": "Портфоліо"
+    },
+    "blog": {
+      "header": "Блог"
+    },
+    "contact": {
+      "header": "Контакт",
+      "subHeader": "Напишіть нам!"
+    }
   }
 }

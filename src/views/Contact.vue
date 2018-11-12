@@ -1,13 +1,20 @@
 <template lang="pug">
-  v-container(fluid d-flex :style={'min-height': '100%', 'align-items': 'center', 'justify-content': 'center' }) {{ $options.name }}
+  v-container(fluid d-flex :style={'min-height': '100%'})
+    PageHeader(:header='$t(`pageHeader.contact.header`, language)', :sub-header='$t(`pageHeader.contact.subHeader`, language)')
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
+import { mapGetters } from 'vuex';
 
 @Component({
   name: 'Contact',
+  computed: {
+    ...mapGetters([
+      'language',
+    ]),
+  },
 })
 
 export default class Contact extends Vue {}
