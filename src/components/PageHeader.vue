@@ -30,6 +30,6 @@ export default class PageHeader extends Vue {
 .line
   background-color #777777
   height 1px
-  width 10%
+  width 15vh
   margin-bottom 10px
 </style>
