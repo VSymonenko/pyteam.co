@@ -455,7 +455,7 @@ export default class AwesomeSwiper extends Vue {
     element.removeEventListener('touchcancel', this.touchStop, false);
     element.removeEventListener('touchend', this.touchStop, false);
   }
-}// TODO: add test
+}
 </script>
 
 <style lang="stylus">
@@ -466,4 +466,10 @@ export default class AwesomeSwiper extends Vue {
   justify-content center
   align-items center
   user-select none
+img /* autoprefixer not support user-drag */
+  -webkit-user-drag none
+  -khtml-user-drag none
+  -moz-user-drag none
+  -o-user-drag none
+  user-drag none
 </style>

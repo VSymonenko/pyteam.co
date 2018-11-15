@@ -1,18 +1,35 @@
 <template lang="pug">
-  v-container(fluid d-flex :style={'min-height': '100%', 'justify-content': 'center' })
+  v-container(fluid d-flex :style={'min-height': '100%', 'justify-content': 'center', flexDirection: 'column' })
     PageHeader(:header='$t(`pageHeader.about.header`, language)')
+    div(class='flex-row')
+      v-spacer(class="hidden-sm-and-down" :style={width: '50%'})
+      div
+        AboutWorks(
+          v-for='(item, index) in aboutWorks'
+          :img='item.img'
+          :key='index'
+          :style={margin: '10px'}
+          :title='item.title'
+          :description='item.description'
+          :reverse='Boolean(index % 2 !== 0)')
+      v-spacer(class="hidden-sm-and-down" :style={width: '50%'})
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import { mapGetters } from 'vuex';
+import AboutWorks from '@/components/AboutWorks.vue';
 
 @Component({
   name: 'About',
+  components: {
+    AboutWorks,
+  },
   computed: {
     ...mapGetters([
       'language',
+      'aboutWorks',
     ]),
   },
 })

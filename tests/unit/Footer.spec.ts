@@ -10,7 +10,7 @@ test('renders correctly', () => {
 });
 
 describe('Footer', () => {
-  it('renders AppBar.language when passed', () => {
+  it('renders language in Footer', () => {
     const language = 'new message';
     const wrapper = shallowMount(Footer, {
       propsData: { language },

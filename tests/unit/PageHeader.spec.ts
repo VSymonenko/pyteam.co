@@ -10,7 +10,7 @@ test('renders correctly', () => {
 });
 
 describe('PageHeader', () => {
-  it('renders AppBar.language when passed', () => {
+  it('renders header in PageHeader', () => {
     const header = 'new header';
     const wrapper = shallowMount(PageHeader, {
       propsData: { header },
@@ -18,7 +18,7 @@ describe('PageHeader', () => {
     expect(wrapper.props().header).toContain(header);
   });
 
-  it('renders a for each button in PageHeader', () => {
+  it('renders a subHeader in PageHeader', () => {
     const subHeader = 'new sub-header';
     const wrapper = shallowMount(PageHeader, {
       propsData: { subHeader },
