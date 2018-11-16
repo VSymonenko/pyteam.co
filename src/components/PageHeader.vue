@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-flex(:style={ display: 'flex', alignItems: 'center', flexDirection: 'column' })
+  v-flex(:style={ display: 'flex', alignItems: 'center', flexDirection: 'column', maxHeight: '120px' })
     div(class='d-flex display-3') {{ header }}
     div(class='line')
     div(class='d-flex display-1' :style={ color: '#777777'} v-if='subHeader') {{ subHeader }}

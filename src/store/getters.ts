@@ -6,6 +6,7 @@ const colors: Getter<State, any> = (state: State) => state.colors;
 const language: Getter<State, any> = (state: State) => state.language;
 const languages: Getter<State, any> = (state: State) => state.languages;
 const aboutWorks: Getter<State, any> = (state: State) => state.aboutWorks;
+const team: Getter<State, any> = (state: State) => state.team;
 
 const getterTree: GetterTree<State, any> = {
   appBar,
@@ -13,6 +14,7 @@ const getterTree: GetterTree<State, any> = {
   language,
   languages,
   aboutWorks,
+  team,
 };
 
 export default getterTree;

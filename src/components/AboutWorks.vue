@@ -1,5 +1,5 @@
 <template lang="pug">
-  v-flex(:style="{ 'flex-direction': $vuetify.breakpoint.xsOnly ? 'column' : reverse ? 'row-reverse' : 'row' }" class='flex-row' style={ maxHeight: '250px'})
+  v-card(:style="{ 'flex-direction': $vuetify.breakpoint.xsOnly ? 'column' : reverse ? 'row-reverse' : 'row' }" class='flex-row' style={ maxHeight: '250px'})
     div(class='flex-column' :style={ flex: '1 1 100%', margin: '10px', padding: '0 20px' })
       img(:src='img' v-if='img' :style="{ height: $vuetify.breakpoint.xsOnly ? '50px' : '100%', width: '100%' }")
     div(class='flex-column' :style={ flex: '1 1 100%', justifyContent: 'space-between', margin: '10px', padding: '0 20px' })

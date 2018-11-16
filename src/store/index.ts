@@ -13,6 +13,7 @@ export interface AppBar {
 }
 
 export interface State {
+  team: object[];
   aboutWorks: object[];
   language: string;
   languages: string[];
@@ -21,6 +22,55 @@ export interface State {
 }
 
 const initState: State = {
+  team: [
+    {
+      name: 'Kade Jacobi',
+      /* tslint:disable-next-line:max-line-length */
+      photo: 'https://images.unsplash.com/photo-1509460913899-515f1df34fea?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=947c49758750ddb0754857f1fa3895a1&auto=format&fit=crop&w=334&q=80',
+      description: 'Laudantium id placeat id explicabo ullam dicta corporis voluptatem.',
+    },
+    {
+      name: 'Lyric Towne',
+      /* tslint:disable-next-line:max-line-length */
+      photo: 'https://images.unsplash.com/photo-1512288094938-363287817259?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=035e468c721c9e8db4179e2362853350&auto=format&fit=crop&w=333&q=80',
+      description: 'Id in est consequatur beatae.',
+    },
+    {
+      name: 'Gudrun Daniel',
+      photo: '',
+      description: 'Sunt laudantium adipisci neque.',
+    },
+    {
+      name: 'Raymond Moen',
+      photo: '',
+      description: 'Eos culpa nihil.',
+    },
+    {
+      name: 'Wanda O\'Hara',
+      photo: '',
+      description: 'Commodi itaque voluptatum quisquam modi.',
+    },
+    {
+      name: 'Jesse Wilkinson',
+      photo: '',
+      description: 'Facilis deleniti repudiandae aut a nesciunt.',
+    },
+    {
+      name: 'Lexi Hodkiewicz',
+      photo: '',
+      description: 'Enim ut quibusdam harum quo eligendi exercitationem ut repellat.',
+    },
+    {
+      name: 'Fredrick Botsford',
+      photo: '',
+      description: 'Ea aut iste.',
+    },
+    {
+      name: 'Morton Deckow',
+      photo: '',
+      description: 'Quod harum vitae praesentium voluptates eveniet occaecati ut beatae.',
+    },
+  ],
   aboutWorks: [
     {
       img: 'https://img1.wsimg.com/isteam/stock/Y8G53l9/:/rs=w:807,h:403.5,cg:true,m/cr=w:807,h:403.5',

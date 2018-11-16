@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<vcard-stub tag="div" d-flex="d-flex" class="flex-column" style="height: 300px; width: 300px; justify-content: center;">
+  <div class="flex-column" style="height: 50%; justify-content: center; margin-bottom: 20px;">
+    <vavatar-stub size="150">
+      <vicon-stub xlarge="x-large" x-large="x-large">person</vicon-stub>
+    </vavatar-stub>
+  </div>
+  <div class="flex-column" style="justify-content: space-between; height: 25%; width: 100%;">
+    <div style="text-align: center; min-height: 42px; width: 100%; display: flex;">
+      <p style="margin: auto;"></p>
+    </div>
+    <div style="margin-top: 20px;"></div>
+  </div>
+</vcard-stub>
+`;

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<vflex-stub tag="div" class="flex-row">
+<vcard-stub tag="div" class="flex-row" style="max-height: 250px; flex-direction: row;">
   <div class="flex-column" style="margin: 10px; padding: 0px 20px;">
     <!---->
   </div>
@@ -9,5 +9,5 @@ exports[`renders correctly 1`] = `
     <h3 style="height: 40px; width: 100%;"></h3>
     <p style="margin: 0px; width: 100%; display: flex;"></p>
   </div>
-</vflex-stub>
+</vcard-stub>
 `;
