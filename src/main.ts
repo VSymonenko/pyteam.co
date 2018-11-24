@@ -10,9 +10,11 @@ import 'roboto-fontface/css/roboto/roboto-fontface.css';
 import '@mdi/font/css/materialdesignicons.css';
 import i18n from './i18n';
 import PageHeader from '@/components/PageHeader.vue';
+import MainView from '@/components/MainView.vue';
 
 // These components are globally registered.
 Vue.component('PageHeader', PageHeader);
+Vue.component('MainView', MainView);
 
 Vue.config.productionTip = false;
 

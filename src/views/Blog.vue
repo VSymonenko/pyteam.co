@@ -1,10 +1,8 @@
 <template lang="pug">
   v-flex(align-center justify-center fill-height d-flex class='flex-column')
     PageHeader(:header='$t(`pageHeader.blog.header`, language)')
-    div(class='flex-row')
-      v-spacer(class="hidden-sm-and-down" :style={width: '50%'})
+    MainView
       v-flex {{ $options.name }} lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-      v-spacer(class="hidden-sm-and-down" :style={width: '50%'})
 </template>
 
 <script lang="ts">

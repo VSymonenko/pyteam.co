@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div class="flex-row">
+  <vspacer-stub class="hidden-sm-and-down"></vspacer-stub>
+  <div></div>
+  <vspacer-stub class="hidden-sm-and-down"></vspacer-stub>
+</div>
+`;

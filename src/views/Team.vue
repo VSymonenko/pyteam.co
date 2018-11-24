@@ -1,8 +1,7 @@
 <template lang="pug">
   v-container(fluid d-flex :style={'min-height': '100%', 'justify-content': 'center', flexDirection: 'column' })
     PageHeader(:header='$t(`pageHeader.team.header`, language)')
-    div(class='flex-row')
-      v-spacer(class="hidden-sm-and-down" :style={ width: '50%' })
+    MainView
       div(class='flex-row' style={ flexWrap: 'wrap' })
         Teammate(
           style={ margin: '10px' }
@@ -11,7 +10,6 @@
           :photo='member.photo'
           :fullName='member.name'
           :description='member.description')
-      v-spacer(class="hidden-sm-and-down" :style={width: '50%'})
 </template>
 
 <script lang="ts">

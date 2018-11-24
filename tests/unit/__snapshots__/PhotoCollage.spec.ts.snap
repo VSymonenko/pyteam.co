@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<vcontainer-stub tag="div" fluid="fluid">
+  <vflex-stub tag="div">
+    <vcard-stub tag="div" xs4="xs4" style="width: 100px;">
+      <vimg-stub src="1" lazysrc="1" position="center center" transition="fade-transition" aspect-ratio="1"></vimg-stub>
+    </vcard-stub>
+    <vcard-stub tag="div" xs4="xs4" style="width: 100px;">
+      <vimg-stub src="2" lazysrc="2" position="center center" transition="fade-transition" aspect-ratio="1"></vimg-stub>
+    </vcard-stub>
+  </vflex-stub>
+</vcontainer-stub>
+`;

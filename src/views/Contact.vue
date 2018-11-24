@@ -1,6 +1,7 @@
 <template lang="pug">
   v-container(fluid d-flex :style={'min-height': '100%'})
     PageHeader(:header='$t(`pageHeader.contact.header`, language)', :sub-header='$t(`pageHeader.contact.subHeader`, language)')
+    MainView
 </template>
 
 <script lang="ts">

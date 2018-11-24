@@ -1,6 +1,7 @@
 <template lang="pug">
   v-container(fluid d-flex :style={'min-height': '100%', 'justify-content': 'center' })
     PageHeader(:header='$t(`pageHeader.portfolio.header`, language)')
+    MainView
 </template>
 
 <script lang="ts">

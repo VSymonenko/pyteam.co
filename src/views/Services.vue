@@ -1,6 +1,8 @@
 <template lang="pug">
-  v-container(fluid d-flex :style={'min-height': '100%', 'justify-content': 'center' })
+  v-container(fluid d-flex :style={'min-height': '100%', 'justify-content': 'center', 'flex-direction': 'column' })
     PageHeader(:header='$t(`pageHeader.services.header`, language)')
+    MainView
+      PhotoCollage
 </template>
 
 
@@ -8,9 +10,13 @@
 import Vue from 'vue';
 import Component from 'vue-class-component';
 import { mapGetters } from 'vuex';
+import { PhotoCollage } from '@/components/Services';
 
 @Component({
   name: 'Services',
+  components: {
+    PhotoCollage,
+  },
   computed: {
     ...mapGetters([
       'language',
