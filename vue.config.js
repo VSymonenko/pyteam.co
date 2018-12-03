@@ -1,3 +1,5 @@
+const workboxPlugin = require('workbox-webpack-plugin');
+
 module.exports = {
   pluginOptions: {
     i18n: {
@@ -15,5 +17,13 @@ module.exports = {
     open: true,
     inline: true,
     publicPath: '/',
-  }
+  },
+  configureWebpack: {
+    plugins: [
+      new workboxPlugin.InjectManifest({
+        swSrc: './src/serviceWorker.js',
+        swDest: 'serviceWorker.js',
+      }),
+    ],
+  },
 }

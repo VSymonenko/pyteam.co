@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import About from './views/About.vue';
-import Blog from './views/Blog.vue';
-import Contact from './views/Contact.vue';
-import Portfolio from './views/Portfolio.vue';
-import Services from './views/Services.vue';
-import Team from './views/Team.vue';
+const About = () => import('./views/About.vue');
+const Blog = () => import('./views/Blog.vue');
+const Contact = () => import('./views/Contact.vue');
+const Portfolio = () => import('./views/Portfolio.vue');
+const Services = () => import('./views/Services.vue');
+const Team = () => import('./views/Team.vue');
 
 Vue.use(Router);
 

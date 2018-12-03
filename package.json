@@ -23,6 +23,7 @@
     "register-service-worker": "^1.0.0",
     "roboto-fontface": "*",
     "selenium-webdriver": "^4.0.0-alpha.1",
+    "serviceworker-webpack-plugin": "^1.0.1",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
     "vue-i18n": "^8.1.0",
@@ -53,7 +54,8 @@
     "vue-cli-plugin-i18n": "^0.5.1",
     "vue-cli-plugin-pug": "^1.0.7",
     "vue-cli-plugin-vuetify": "^0.2.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "workbox-webpack-plugin": "^3.6.3"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
