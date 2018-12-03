@@ -64,4 +64,10 @@ export default class App extends Vue {
   display flex
   flex-direction row
   justify-content center
+nav
+  clip-path polygon(0 0, 100% 0, 100% 85%, 0 100%)
+main
+  padding 54px 0px 27px!important
+footer
+  clip-path polygon(0 15%, 100% 0, 100% 100%, 0 100%)
 </style>
