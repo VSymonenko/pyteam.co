@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "strictNullChecks": true,
     "baseUrl": ".",
     "types": [
@@ -30,15 +30,10 @@
       "scripthost"
     ]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+  "files": [
+    "./src/serviceWorker.ts"
   ],
   "exclude": [
     "node_modules"
-  ],
-
+  ]
 }
