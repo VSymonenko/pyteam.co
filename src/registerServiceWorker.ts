@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-if (process.env.NODE_ENV === 'development' && 'serviceWorker' in navigator) {
+if (process.env.NODE_ENV === 'worker' && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register(`${process.env.BASE_URL}serviceWorker.js`).then( (registration) => {
       // Registration was successful
